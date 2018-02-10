@@ -1,0 +1,7 @@
+rails g model profile gender:string birth_year:integer first_name:string last_name:string user:references
+
+rails g model todo_list list_name:string list_due_date:date
+
+rails g migration add_user_to_todo_list user:references todo_lists:references
+
+rails g model todo_item due_date:date title:string description:text completed:boolean todo_list:references

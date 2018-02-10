@@ -1,0 +1,3 @@
+rails new todolists
+
+rails g scaffold todo_item due_date:date title:string description:text completed:boolean
